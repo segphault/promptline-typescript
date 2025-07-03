@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.3 (2025-07-03)
+
+Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/segphault/promptline-typescript/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
+
+### Chores
+
+* add docs to RequestOptions type ([bb246b1](https://github.com/segphault/promptline-typescript/commit/bb246b1a22c7acb13e54e9d4c08f06976b28c3d8))
+
 ## 0.1.0-alpha.2 (2025-07-03)
 
 Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/segphault/promptline-typescript/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
