@@ -145,7 +145,7 @@ export class Promptline {
    * API Client for interfacing with the Promptline API.
    *
    * @param {string | null | undefined} [opts.apiKey=process.env['PROMPTLINE_API_KEY'] ?? null]
-   * @param {string} [opts.baseURL=process.env['PROMPTLINE_BASE_URL'] ?? /] - Override the default base URL for the API.
+   * @param {string} [opts.baseURL=process.env['PROMPTLINE_BASE_URL'] ?? http://localhost:7000] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
    * @param {Fetch} [opts.fetch] - Specify a custom `fetch` function implementation.
@@ -161,7 +161,7 @@ export class Promptline {
     const options: ClientOptions = {
       apiKey,
       ...opts,
-      baseURL: baseURL || `/`,
+      baseURL: baseURL || `http://localhost:7000`,
     };
 
     this.baseURL = options.baseURL!;
@@ -206,7 +206,7 @@ export class Promptline {
    * Check whether the base URL is set to its default.
    */
   #baseURLOverridden(): boolean {
-    return this.baseURL !== '/';
+    return this.baseURL !== 'http://localhost:7000';
   }
 
   protected defaultQuery(): Record<string, string | undefined> | undefined {
