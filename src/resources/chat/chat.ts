@@ -35,9 +35,9 @@ export class ChatResource extends APIResource {
 }
 
 export interface Chat {
-  userId: string;
+  id: string;
 
-  id?: string;
+  userId: string;
 
   created?: string;
 
@@ -51,6 +51,8 @@ export interface Chat {
 }
 
 export interface Message {
+  id: string;
+
   chatId: string;
 
   content: string;
@@ -60,8 +62,6 @@ export interface Message {
   role: number;
 
   userId: string;
-
-  id?: string;
 
   created?: string;
 
