@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.2 (2025-07-03)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/segphault/promptline-typescript/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Features
+
+* **api:** update via SDK Studio ([2e8ee7d](https://github.com/segphault/promptline-typescript/commit/2e8ee7dce8b1f40abc95c60bad0308a410bb9dc3))
+
 ## 0.1.0-alpha.1 (2025-07-03)
 
 Full Changelog: [v0.0.1-alpha.1...v0.1.0-alpha.1](https://github.com/segphault/promptline-typescript/compare/v0.0.1-alpha.1...v0.1.0-alpha.1)
