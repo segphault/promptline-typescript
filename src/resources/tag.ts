@@ -33,11 +33,11 @@ export class TagResource extends APIResource {
 }
 
 export interface Tag {
+  id: string;
+
   name: string;
 
   userId: string;
-
-  id?: string;
 
   icon?: string | null;
 
