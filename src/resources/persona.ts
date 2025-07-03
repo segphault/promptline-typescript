@@ -15,11 +15,11 @@ export class PersonaResource extends APIResource {
 }
 
 export interface Persona {
+  id: string;
+
   name: string;
 
   userId: string;
-
-  id?: string;
 
   description?: string | null;
 
