@@ -306,13 +306,13 @@ describe('instantiate client', () => {
     test('empty env variable', () => {
       process.env['PROMPTLINE_BASE_URL'] = ''; // empty
       const client = new Promptline({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('http://promptline.drydock.fleet/');
+      expect(client.baseURL).toEqual('http://localhost:7000');
     });
 
     test('blank env variable', () => {
       process.env['PROMPTLINE_BASE_URL'] = '  '; // blank
       const client = new Promptline({ apiKey: 'My API Key' });
-      expect(client.baseURL).toEqual('http://promptline.drydock.fleet/');
+      expect(client.baseURL).toEqual('http://localhost:7000');
     });
 
     test('in request options', () => {
