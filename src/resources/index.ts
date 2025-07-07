@@ -10,6 +10,7 @@ export {
   type ChatCreateParams,
   type ChatAddTagsParams,
 } from './chat/chat';
+export { Events, type EventListResponse } from './events';
 export {
   PersonaResource,
   type Persona,

@@ -16,6 +16,7 @@ import * as Errors from './core/error';
 import * as Uploads from './core/uploads';
 import * as API from './resources/index';
 import { APIPromise } from './core/api-promise';
+import { EventListResponse, Events } from './resources/events';
 import { Persona, PersonaCreateParams, PersonaResource, PersonaRetrieveResponse } from './resources/persona';
 import {
   Tag,
@@ -69,6 +70,8 @@ export interface ClientOptions {
    *
    * Note that request timeouts are retried by default, so in a worst-case scenario you may wait
    * much longer than this timeout before the promise succeeds or fails.
+   *
+   * @unit milliseconds
    */
   timeout?: number | undefined;
   /**
@@ -738,10 +741,12 @@ export class Promptline {
   persona: API.PersonaResource = new API.PersonaResource(this);
   chat: API.ChatResource = new API.ChatResource(this);
   tag: API.TagResource = new API.TagResource(this);
+  events: API.Events = new API.Events(this);
 }
 Promptline.PersonaResource = PersonaResource;
 Promptline.ChatResource = ChatResource;
 Promptline.TagResource = TagResource;
+Promptline.Events = Events;
 export declare namespace Promptline {
   export type RequestOptions = Opts.RequestOptions;
 
@@ -773,4 +778,6 @@ export declare namespace Promptline {
     type TagCreateParams as TagCreateParams,
     type TagUpdateParams as TagUpdateParams,
   };
+
+  export { Events as Events, type EventListResponse as EventListResponse };
 }
