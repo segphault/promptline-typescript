@@ -57,3 +57,13 @@ Methods:
 - <code title="get /api/tag">client.tag.<a href="./src/resources/tag.ts">list</a>() -> TagListResponse</code>
 - <code title="delete /api/tag/{tagId}">client.tag.<a href="./src/resources/tag.ts">delete</a>(tagID) -> TagDeleteResponse</code>
 - <code title="get /api/tag/{tagId}/chats">client.tag.<a href="./src/resources/tag.ts">listChats</a>(tagID) -> TagListChatsResponse</code>
+
+# Events
+
+Types:
+
+- <code><a href="./src/resources/events.ts">EventListResponse</a></code>
+
+Methods:
+
+- <code title="get /api/events">client.events.<a href="./src/resources/events.ts">list</a>() -> EventListResponse</code>
