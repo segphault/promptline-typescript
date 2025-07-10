@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.4 (2025-07-10)
+
+Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/segphault/promptline-typescript/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
+
+### Chores
+
+* make some internal functions async ([cb7d4ad](https://github.com/segphault/promptline-typescript/commit/cb7d4ada1d6dc1e197e4fadaa78c03784b24a445))
+
 ## 0.1.0-alpha.3 (2025-07-07)
 
 Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/segphault/promptline-typescript/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
