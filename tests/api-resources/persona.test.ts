@@ -8,7 +8,7 @@ const client = new Promptline({
 });
 
 describe('resource persona', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.persona.create({
       description: 'description',
@@ -24,7 +24,7 @@ describe('resource persona', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.persona.create({
       description: 'description',
@@ -33,7 +33,7 @@ describe('resource persona', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.persona.retrieve();
     const rawResponse = await responsePromise.asResponse();

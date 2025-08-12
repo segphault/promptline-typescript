@@ -8,7 +8,7 @@ const client = new Promptline({
 });
 
 describe('resource tag', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.tag.create({
       icon: 'icon',
@@ -24,7 +24,7 @@ describe('resource tag', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.tag.create({
       icon: 'icon',
@@ -33,7 +33,7 @@ describe('resource tag', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.tag.retrieve('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e');
     const rawResponse = await responsePromise.asResponse();
@@ -45,7 +45,7 @@ describe('resource tag', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.tag.update('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e', {
       icon: 'icon',
@@ -61,7 +61,7 @@ describe('resource tag', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.tag.update('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e', {
       icon: 'icon',
@@ -70,7 +70,7 @@ describe('resource tag', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.tag.list();
     const rawResponse = await responsePromise.asResponse();
@@ -82,7 +82,7 @@ describe('resource tag', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.tag.delete('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e');
     const rawResponse = await responsePromise.asResponse();
@@ -94,7 +94,7 @@ describe('resource tag', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listChats', async () => {
     const responsePromise = client.tag.listChats('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e');
     const rawResponse = await responsePromise.asResponse();

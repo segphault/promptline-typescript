@@ -8,7 +8,7 @@ const client = new Promptline({
 });
 
 describe('resource events', () => {
-  // skipped: currently no good way to test endpoints with content type text/event-stream, Prism mock server will fail
+  // Prism doesn't support text/event-stream responses
   test.skip('list', async () => {
     const responsePromise = client.events.list();
     const rawResponse = await responsePromise.asResponse();
