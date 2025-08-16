@@ -746,10 +746,12 @@ export class Promptline {
   tag: API.TagResource = new API.TagResource(this);
   events: API.Events = new API.Events(this);
 }
+
 Promptline.PersonaResource = PersonaResource;
 Promptline.ChatResource = ChatResource;
 Promptline.TagResource = TagResource;
 Promptline.Events = Events;
+
 export declare namespace Promptline {
   export type RequestOptions = Opts.RequestOptions;
 
