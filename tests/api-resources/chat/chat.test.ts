@@ -8,7 +8,7 @@ const client = new Promptline({
 });
 
 describe('resource chat', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.chat.create({
       model: 'model',
@@ -24,7 +24,7 @@ describe('resource chat', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.chat.create({
       model: 'model',
@@ -33,7 +33,7 @@ describe('resource chat', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.chat.retrieve('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e');
     const rawResponse = await responsePromise.asResponse();
@@ -45,7 +45,7 @@ describe('resource chat', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.chat.list();
     const rawResponse = await responsePromise.asResponse();
@@ -57,7 +57,7 @@ describe('resource chat', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('addTags: only required params', async () => {
     const responsePromise = client.chat.addTags('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e', {
       body: ['182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e'],
@@ -71,7 +71,7 @@ describe('resource chat', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('addTags: required and optional params', async () => {
     const response = await client.chat.addTags('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e', {
       body: ['182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e'],
